@@ -4,10 +4,6 @@
     {
         static void Main(string[] args)
         {
-            //string cadena = "a";
-
-            //string cadEncriptada = "";
-
             Console.WriteLine("Que cadena quieres encriptar?");
             string cadena = Console.ReadLine();
 
@@ -15,39 +11,44 @@
 
             string cadEncriptada = EncriptarCadena(cadena);
 
+            // string cadEncriptada = EncriptarMensaje(cadena);
+
+
             Console.WriteLine($"Cadena encriptada: {cadEncriptada}");
 
             string cadenaDesencriptada = DesencriptarCadena(cadEncriptada);
             Console.WriteLine();
             Console.WriteLine($"Cadena desencriptada: {cadenaDesencriptada}");
-
-
-            //for (int i = 0; i < cadena.Length; i++)
-            //{
-            //    char letra = cadena[i]; //h
-            //    int letraASCII = (int)letra; //104 int
-            //    string numString = letraASCII.ToString(); // convertir 104 a string para poder tomar el 1 y ultimo valor
-
-            //    string num1 = numString[0].ToString(); // primer numero 1
-            //    string num2 = numString[numString.Length - 1].ToString(); // ultimo numero 4
-
-            //    string concat = (num1 + num2); // concatenar el primer y ultimo numero (14)
-
-            //    int firstLetter = int.Parse(numString) + int.Parse(num2); // sacar la primera letra para la encript sumando el numero base 104 + el segundo numero (4) --> 108
-            //    int endLetter = int.Parse(numString) - int.Parse(num1); // sacar la segunda letra para la encript restando el numero base 104 - el primer numero (1) --> 103
-
-            //    char firstChar = (char)firstLetter; // sacar letra del 108 --> l
-            //    char endChar = (char)endLetter; // sacar letra del 103 --> g
-
-            //    string firstCad = firstChar.ToString() + concat + endChar; // concatenar todo --> l 14 g
-
-
-            //    cadEncriptada += firstCad; // ir concatenando todas las letras encriptadas --> l14g
-            //}
-
-
-            //Console.WriteLine(cadEncriptada);
         }
+
+        //static string EncriptarMensaje(string cadena)
+        //{
+        //    string cadenaEncriptada = "";
+        //    for (int i = 0; i < cadena.Length; i++)
+        //    {
+        //        char letra = cadena[i]; //h
+        //        int letraASCII = (int)letra; //104 int
+        //        string numString = letraASCII.ToString(); // convertir 104 a string para poder tomar el 1 y ultimo valor
+
+        //        string num1 = numString[0].ToString(); // primer numero 1
+        //        string num2 = numString[numString.Length - 1].ToString(); // ultimo numero 4
+
+        //        string concat = (num1 + num2); // concatenar el primer y ultimo numero (14)
+
+        //        int firstLetter = int.Parse(numString) + int.Parse(num2); // sacar la primera letra para la encript sumando el numero base 104 + el segundo numero (4) --> 108
+        //        int endLetter = int.Parse(numString) - int.Parse(num1); // sacar la segunda letra para la encript restando el numero base 104 - el primer numero (1) --> 103
+
+        //        char firstChar = (char)firstLetter; // sacar letra del 108 --> l
+        //        char endChar = (char)endLetter; // sacar letra del 103 --> g
+
+        //        string firstCad = firstChar.ToString() + concat + endChar; // concatenar todo --> l 14 g
+
+
+        //        cadenaEncriptada += firstCad; // ir concatenando todas las letras encriptadas --> l14g
+        //    }
+        //    return cadenaEncriptada;
+        //}
+
 
         static string EncriptarCadena(string cadena)
         {
