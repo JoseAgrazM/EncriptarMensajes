@@ -1,6 +1,7 @@
 Ejercicio de encriptar un mensaje usando ASCII
 
-Ejemplo: 
+Ejemplo:
+
 Que cadena quieres encriptar?
 Hola
 
